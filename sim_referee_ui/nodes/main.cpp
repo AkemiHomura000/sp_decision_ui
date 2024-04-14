@@ -25,7 +25,7 @@
 #include <QApplication>
 #include <QIcon>
 #include "sim_referee.h"
-
+#include "Map_select.h"
 
 int main(int argc, char *argv[])
 {

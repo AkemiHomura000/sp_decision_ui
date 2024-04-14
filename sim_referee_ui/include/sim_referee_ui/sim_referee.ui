@@ -131,15 +131,9 @@
      </widget>
     </item>
     <item>
-     <widget class="QLabel" name="label_rfid1">
-      <property name="font">
-       <font>
-        <pointsize>22</pointsize>
-        <italic>true</italic>
-       </font>
-      </property>
+     <widget class="QLabel" name="label_3">
       <property name="text">
-       <string>rfid_1</string>
+       <string>发送坐标点(x,y) m</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
@@ -147,28 +141,61 @@
      </widget>
     </item>
     <item>
-     <widget class="QPushButton" name="button_rfid1">
+     <widget class="QPushButton" name="pushButton_3">
       <property name="minimumSize">
        <size>
         <width>0</width>
-        <height>45</height>
+        <height>35</height>
        </size>
       </property>
       <property name="text">
-       <string>rfid1</string>
+       <string>打开地图</string>
       </property>
      </widget>
     </item>
     <item>
-     <widget class="QLabel" name="label_rfid2">
-      <property name="font">
-       <font>
-        <pointsize>22</pointsize>
-        <italic>true</italic>
-       </font>
+     <widget class="QDoubleSpinBox" name="target_x">
+      <property name="minimum">
+       <double>-15.000000000000000</double>
+      </property>
+      <property name="maximum">
+       <double>30.000000000000000</double>
+      </property>
+      <property name="singleStep">
+       <double>0.100000000000000</double>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QDoubleSpinBox" name="target_y">
+      <property name="minimum">
+       <double>-10.000000000000000</double>
+      </property>
+      <property name="maximum">
+       <double>15.000000000000000</double>
+      </property>
+      <property name="singleStep">
+       <double>0.100000000000000</double>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="botto_target">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>35</height>
+       </size>
       </property>
       <property name="text">
-       <string>rfid_2</string>
+       <string>target</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>发送单个字符</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
@@ -176,15 +203,25 @@
      </widget>
     </item>
     <item>
-     <widget class="QPushButton" name="button_rfid2">
+     <widget class="QTextEdit" name="key_edit">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>50</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="botton_key">
       <property name="minimumSize">
        <size>
         <width>0</width>
-        <height>45</height>
+        <height>35</height>
        </size>
       </property>
       <property name="text">
-       <string>rfid2</string>
+       <string>key</string>
       </property>
      </widget>
     </item>
@@ -211,7 +248,7 @@
      </widget>
     </item>
     <item row="5" column="4">
-     <widget class="QLabel" name="label_9">
+     <widget class="QLabel" name="label_team_base_hp">
       <property name="font">
        <font>
         <pointsize>20</pointsize>
@@ -227,7 +264,10 @@
      </widget>
     </item>
     <item row="3" column="5">
-     <widget class="QSlider" name="verticalSlider_6">
+     <widget class="QSlider" name="slider_team_infantry_4">
+      <property name="maximum">
+       <number>400</number>
+      </property>
       <property name="orientation">
        <enum>Qt::Vertical</enum>
       </property>
@@ -244,14 +284,20 @@
      </widget>
     </item>
     <item row="3" column="2">
-     <widget class="QSlider" name="verticalSlider_2">
+     <widget class="QSlider" name="slider_team_infantry_3">
+      <property name="maximum">
+       <number>400</number>
+      </property>
       <property name="orientation">
        <enum>Qt::Vertical</enum>
       </property>
      </widget>
     </item>
     <item row="5" column="2">
-     <widget class="QSlider" name="verticalSlider_4">
+     <widget class="QSlider" name="slider_team_outpose">
+      <property name="maximum">
+       <number>1500</number>
+      </property>
       <property name="orientation">
        <enum>Qt::Vertical</enum>
       </property>
@@ -274,7 +320,7 @@
      </widget>
     </item>
     <item row="0" column="4">
-     <widget class="QLabel" name="label_11">
+     <widget class="QLabel" name="label_team_engineer_hp">
       <property name="font">
        <font>
         <pointsize>20</pointsize>
@@ -290,7 +336,7 @@
      </widget>
     </item>
     <item row="4" column="1">
-     <widget class="QLabel" name="label_6">
+     <widget class="QLabel" name="label_team_infantry_5_hp">
       <property name="font">
        <font>
         <pointsize>20</pointsize>
@@ -306,14 +352,17 @@
      </widget>
     </item>
     <item row="0" column="2">
-     <widget class="QSlider" name="verticalSlider">
+     <widget class="QSlider" name="slider_team_hero">
+      <property name="maximum">
+       <number>500</number>
+      </property>
       <property name="orientation">
        <enum>Qt::Vertical</enum>
       </property>
      </widget>
     </item>
     <item row="3" column="4">
-     <widget class="QLabel" name="label_10">
+     <widget class="QLabel" name="label_team_infantry_4_hp">
       <property name="font">
        <font>
         <pointsize>20</pointsize>
@@ -329,7 +378,7 @@
      </widget>
     </item>
     <item row="4" column="4">
-     <widget class="QLabel" name="label_8">
+     <widget class="QLabel" name="label_team_sentry_hp">
       <property name="font">
        <font>
         <pointsize>20</pointsize>
@@ -355,7 +404,7 @@
      </widget>
     </item>
     <item row="3" column="1">
-     <widget class="QLabel" name="label_5">
+     <widget class="QLabel" name="label_team_infantry_3_hp">
       <property name="font">
        <font>
         <pointsize>20</pointsize>
@@ -371,7 +420,7 @@
      </widget>
     </item>
     <item row="5" column="1">
-     <widget class="QLabel" name="label_7">
+     <widget class="QLabel" name="label_team_outpose_hp">
       <property name="font">
        <font>
         <pointsize>20</pointsize>
@@ -387,14 +436,17 @@
      </widget>
     </item>
     <item row="0" column="5">
-     <widget class="QSlider" name="verticalSlider_5">
+     <widget class="QSlider" name="slider_team_engineer">
+      <property name="maximum">
+       <number>250</number>
+      </property>
       <property name="orientation">
        <enum>Qt::Vertical</enum>
       </property>
      </widget>
     </item>
     <item row="0" column="1">
-     <widget class="QLabel" name="label_4">
+     <widget class="QLabel" name="label_team_hero_hp">
       <property name="font">
        <font>
         <pointsize>20</pointsize>
@@ -410,21 +462,30 @@
      </widget>
     </item>
     <item row="5" column="5">
-     <widget class="QSlider" name="verticalSlider_8">
+     <widget class="QSlider" name="slider_team_base">
+      <property name="maximum">
+       <number>5000</number>
+      </property>
       <property name="orientation">
        <enum>Qt::Vertical</enum>
       </property>
      </widget>
     </item>
     <item row="4" column="2">
-     <widget class="QSlider" name="verticalSlider_3">
+     <widget class="QSlider" name="slider_team_infantry_5">
+      <property name="maximum">
+       <number>400</number>
+      </property>
       <property name="orientation">
        <enum>Qt::Vertical</enum>
       </property>
      </widget>
     </item>
     <item row="4" column="5">
-     <widget class="QSlider" name="verticalSlider_7">
+     <widget class="QSlider" name="slider_team_sentry">
+      <property name="maximum">
+       <number>400</number>
+      </property>
       <property name="orientation">
        <enum>Qt::Vertical</enum>
       </property>
