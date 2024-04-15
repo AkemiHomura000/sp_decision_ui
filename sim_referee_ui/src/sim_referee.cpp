@@ -172,7 +172,7 @@ void referee_gui::referee_info_init()
     referee_info.stage_remain_time = 180;
     referee_info.target_x = 0.0;
     referee_info.target_y = 0.0;
-    referee_info.key = '0';
+    referee_info.key = 0;
 }
 void referee_gui::enemy_hp_init()
 {
@@ -348,7 +348,7 @@ void referee_gui::on_botto_target_clicked()
     referee_info_pub_.publish(referee_info);
     referee_info.target_x = 0.0;
     referee_info.target_y = 0.0;
-    referee_info.key = '0';
+    referee_info.key = 0;
 }
 
 void referee_gui::on_botton_key_clicked()
@@ -359,7 +359,7 @@ void referee_gui::on_botton_key_clicked()
     referee_info_pub_.publish(referee_info);
     referee_info.target_x = 0.0;
     referee_info.target_y = 0.0;
-    referee_info.key = '0';
+    referee_info.key = 0;
 }
 
 void referee_gui::on_key_edit_textChanged()
